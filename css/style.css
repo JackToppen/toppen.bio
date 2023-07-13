@@ -34,16 +34,23 @@
     color: red;
 }
 
-.circle{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #d1cfcf;
-  position: relative;
-  overflow: hidden;
+.headshot{
+	width: 200px;
+	height: 200px;
+  	border-radius: 50%;
+  	background-color: #d1cfcf;
+  	position: absolute;
+  	bottom: 400px;
+  	left: 100px;
+  	overflow: hidden;
 }
 
-.center {
+.headshot img{
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+.center{
   	margin: 0;
 	position: absolute;
 	top: 50%;
