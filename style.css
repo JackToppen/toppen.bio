@@ -1,93 +1,73 @@
-* {
-	font-family: "Schibsted Grotesk";
-	margin: 0;
-  	padding: 0;
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #000000;
+  font-family: "Schibsted Grotesk";
 }
 
-body {   
-	min-height: 100%;
-	background-color: white;
-}
-
-a:visited {
-  color: #20225e;
-}
-
-.profile {
-	margin: 0;
-  	position: absolute;
-  	top: 40%;
-  	left: 50%;
-  	-ms-transform: translate(-50%, -50%);
-  	transform: translate(-50%, -50%);
-	background-color: white;
-}
-
-.headshot {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	border: 1px solid black;
-	overflow: hidden;
-	position: relative;
-	top: 0px;
-  	left: 100px;
-}
-
-.headshot img {
-	padding-top: 20px;
-	padding-left: 5px;
-	transition: transform .5s;
-	background-color: white;
-	position: relative;
-}
-
-.headshot img:hover {
-	transform: scale(1.15);
-}
-
-.profile p {
-	padding-top: 10px;
-	text-align: center;
-	font-size: 16px;
-}
-
-/* asdf */
 #particles-js {
     width: 100%;
     height: 100vh;
 }
 
-
-/* Website footer */
-.footer {
-    height: 40px;
-    width: 100%;
-    overflow: hidden;
-	display: table;
-	background-color: white;
-	border-top: 1px solid black;
+#main {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  border: solid black 1.5px;
 }
 
-.footer-note {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 13.5px;
-	color: black;
+#headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden; 
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.footer-note a {
-	color: black;
-	text-decoration: none;
+#headshot img {
+  transition: transform .5s;
+  padding-top: 20px;
+  padding-left: 5px;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .footer {
-	  height: 30px;
+#headshot img:hover {
+  transform: scale(1.15);
+}
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-top: solid black 1.5px;
+  font-size: 13.5px;
+}
+
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #footer {
+    font-size: 10px;
   }
-  .footer-note {
-	  font-size: 10px;
+  #headshot {
+	width: 100px;
+	height: 100px;
+  }
+  h2 {
+	font-size: 15px;
+  }
+  p {
+	font-size: 8px;
   }
 }
-
